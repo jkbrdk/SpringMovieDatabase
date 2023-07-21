@@ -1,0 +1,27 @@
+spring.datasource:
+  url: jdbc:mysql://localhost/SpringMovieDatabase?createDatabaseIfNotExist=true
+  username: root
+  password:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8080
+
+springdoc:
+  api-docs.path: /api-docs
+
+spring:
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
+  jackson:
+    mapper:
+      accept-case-insensitive-enums: true
+
+spring.jpa.show-sql: true
+
+cz.itnetwork:
+  genres[0]: comedy
+  genres[1]: drama
+  genres[2]: romantic
